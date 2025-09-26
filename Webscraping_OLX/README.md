@@ -75,6 +75,38 @@ O projeto é composto por dois arquivos principais:
 
 ---
 
+🤖 Como obter BOT TOKEN e CHAT ID no Telegram
+
+🔑 BOT TOKEN
+
+No Telegram, procure pelo bot @BotFather.
+
+Envie o comando:
+
+/newbot
+
+
+Escolha um nome e um username (terminando com _bot).
+
+O BotFather vai te fornecer um TOKEN parecido com:
+
+123456789:ABC-123defGhIjkLmNoPQRstuVWxyz
+
+
+Coloque esse token no campo TOKEN_BOT do arquivo .env.
+
+🆔 CHAT ID
+
+No Telegram, procure pelo bot @userinfobot ou @getidsbot.
+
+Inicie a conversa e ele vai te retornar seu ID numérico (ex.: 987654321).
+
+Esse número é o valor do CHAT_ID que você deve colocar no .env.
+
+⚠️ Se você quiser usar o bot em um grupo, adicione o bot ao grupo e use novamente o @userinfobot dentro dele para pegar o chat_id do grupo.
+
+---
+
 ## ▶️ Como rodar  
 
 1. **Rodar o coletor de anúncios (OLX):**  
