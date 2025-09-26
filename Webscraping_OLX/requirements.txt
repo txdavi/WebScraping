@@ -1,0 +1,4 @@
+pandas
+selenium
+python-telegram-bot==20.3
+python-dotenv
