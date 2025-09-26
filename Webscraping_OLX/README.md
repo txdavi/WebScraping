@@ -75,35 +75,27 @@ O projeto é composto por dois arquivos principais:
 
 ---
 
-🤖 Como obter BOT TOKEN e CHAT ID no Telegram
+## 🤖 Como obter BOT TOKEN e CHAT ID no Telegram  
 
-🔑 BOT TOKEN
+### 🔑 BOT TOKEN  
+1. No Telegram, procure pelo bot **@BotFather**.  
+2. Envie o comando:  
+   ```
+   /newbot
+   ```  
+3. Escolha um **nome** e um **username** (terminando com `_bot`).  
+4. O BotFather vai te fornecer um **TOKEN** parecido com:  
+   ```
+   123456789:ABC-123defGhIjkLmNoPQRstuVWxyz
+   ```  
+5. Coloque esse token no campo `TOKEN_BOT` do arquivo `.env`.  
 
-No Telegram, procure pelo bot @BotFather.
+### 🆔 CHAT ID  
+1. No Telegram, procure pelo bot **@userinfobot** ou **@getidsbot**.  
+2. Inicie a conversa e ele vai te retornar seu **ID numérico** (ex.: `987654321`).  
+3. Esse número é o valor do `CHAT_ID` que você deve colocar no `.env`.  
 
-Envie o comando:
-
-/newbot
-
-
-Escolha um nome e um username (terminando com _bot).
-
-O BotFather vai te fornecer um TOKEN parecido com:
-
-123456789:ABC-123defGhIjkLmNoPQRstuVWxyz
-
-
-Coloque esse token no campo TOKEN_BOT do arquivo .env.
-
-🆔 CHAT ID
-
-No Telegram, procure pelo bot @userinfobot ou @getidsbot.
-
-Inicie a conversa e ele vai te retornar seu ID numérico (ex.: 987654321).
-
-Esse número é o valor do CHAT_ID que você deve colocar no .env.
-
-⚠️ Se você quiser usar o bot em um grupo, adicione o bot ao grupo e use novamente o @userinfobot dentro dele para pegar o chat_id do grupo.
+⚠️ Se você quiser usar o bot em um **grupo**, adicione o bot ao grupo e use novamente o `@userinfobot` dentro dele para pegar o `chat_id` do grupo.  
 
 ---
 
@@ -132,10 +124,3 @@ Esse número é o valor do CHAT_ID que você deve colocar no .env.
 - O arquivo `produtos_enviados.csv` evita que o mesmo anúncio seja enviado duas vezes.  
 
 ---
-
-## 🧩 Possíveis melhorias  
-
-- Adicionar suporte a múltiplos estados/categorias.  
-- Implementar filtros por preço, modelo ou palavra-chave.  
-- Criar painel de controle via web (Flask/Django).  
-- Deploy em servidor (ex.: VPS, Docker, Heroku).  
